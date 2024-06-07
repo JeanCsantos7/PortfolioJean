@@ -1,0 +1,105 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.Container{
+
+    width: 100%;
+    height: 800px;
+     background-color: rgb(14, 14, 14);
+     background-image: url(../assets/BackgroundCode.jpg);
+     background-size: cover;
+   
+ 
+    
+   
+}
+
+
+
+body{
+
+    background-color: rgb(14, 14, 14)
+}
+
+
+
+nav{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.Logotipo, .Links{
+
+    font-family: "Montserrat", sans-serif;
+}
+
+.Logotipo{
+   
+    text-align: center;
+    margin-top: 5%;
+}
+
+.Jean{
+    font-size: 29px;
+    color: #45E2FF;
+}
+
+.Carlos{
+    font-size: 29px;
+    color: #FFF;
+}
+
+.ContainerLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13%;
+    margin-top: 2.9%;
+    
+}
+
+.Links{
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 600;
+  
+}
+
+.btnMenu{
+    display: none;
+}
+
+
+@media screen and (max-width: 758px) {
+    
+    
+   .Logotipo{
+    margin-left: 23%;
+   }
+
+    nav{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+         padding: 2%;
+        gap: 2%;
+    }
+    
+    .Links{
+        display: none;
+    }
+
+    .btnMenu{
+        display: block;
+        font-size: 82px;
+        margin-right: 72%;
+        color: #45E2FF;
+    }
+}

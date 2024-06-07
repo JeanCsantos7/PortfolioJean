@@ -1,0 +1,32 @@
+
+
+.Container{
+    background-color: #45E2FF;
+    height: 280px;
+    width: 100%;
+    margin-top: 15%;
+ 
+}
+
+.ContainerLinks{
+    display: flex;
+ 
+    flex-direction: column;
+ 
+   
+    margin: 0 auto;
+    gap: 13%;
+    margin-top: 2.9%;
+    
+}
+
+.Links{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 8%;
+  
+}

@@ -1,0 +1,96 @@
+
+
+.Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+    width: 100%;
+    height: 590px;
+     padding: 2%;
+    background-color: rgb(24, 24, 24);
+    margin-top: 7%;
+    padding-left: 25%;
+
+}
+
+.Imagem{
+    border-radius: 35px;
+    border: 3px solid #2596aa;
+    width: 25%;
+
+}
+
+.Titulo, .Informações{
+    
+    font-family: "Montserrat", sans-serif;
+    color: #FFF;
+}
+
+.Titulo{
+    font-size: 28px;
+   
+    padding-top: 8%;
+    margin: 1%;
+   
+}
+
+.LinhaSobre{
+
+ background-color: #2596aa;
+ border: none;
+ height: 2px;
+ width: 250px;
+ margin-left: 1%;
+}
+
+.Informações{
+font-size: 18px;
+width: 65%;
+margin-top: 3%;
+
+}
+
+@media screen and (max-width: 758px)
+{
+    
+    .Container{
+        flex-direction: column;
+        height: 795px;
+        padding: 1.6%;
+    }
+    
+    
+    .Titulo{
+        font-size: 23px;
+        padding-top: 1%;
+        text-align: center;
+     
+       
+    }
+
+    .Imagem{
+       
+        width: 65%;
+        margin-top: 3%;
+    
+    }
+
+    .Informações{
+        font-size: 15px;
+        width: 95%;
+        text-align: center;
+        padding: 3%;
+      
+        
+        }
+
+        .LinhaSobre{
+           
+           margin: 0 auto;
+            width: 255px;
+        
+           
+           }
+
+}

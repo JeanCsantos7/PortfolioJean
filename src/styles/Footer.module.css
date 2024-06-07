@@ -1,0 +1,76 @@
+
+
+.Container{
+    background-color: rgb(24, 24, 24);
+    width: 100%;
+    height: 385px;
+}
+
+.Logotipo, .Copyright{
+
+    font-family: "Montserrat", sans-serif;
+  
+}
+
+.Logotipo{
+   
+    text-align: center;
+    padding-top: 4%;
+}
+
+.Jean{
+    font-size: 29px;
+    color: #45E2FF;
+    
+}
+
+.Carlos{
+    font-size: 29px;
+    color: #FFF;
+}
+
+.Copyright{
+    font-size: 15px;
+    margin-top: 2%;
+    color: #FFF;
+    text-align: center;
+}
+
+.ContainerFooter{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    margin-top: 2%;
+}
+
+.Imagem{
+    width: 38px;
+}
+
+
+@media screen and (max-width: 758px) {
+    .Logotipo{
+   
+      
+        padding-top: 16%;
+    }
+
+    .ContainerFooter{
+
+        margin-top: 5.5%;
+        gap: 6%;
+    }
+
+    .Container{
+       
+        height: 322px;
+    }
+
+    .Copyright{
+        font-size: 16px;
+        margin-top: 6.5%;
+    
+    }
+}
