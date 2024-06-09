@@ -41,7 +41,7 @@ export default function Projetos()
         titulo: "Gym Goes",
         info: "Projeto de estudos que representa uma página de uma academia ficticia, visei aplicar novos conhecimentos que adquiri sobre roteamento de páginas e autenticação. Nesse projeto utilizei Vite + React Js,  Css Modules,  React Router Dom,  React Loader Spinner, React Icons ",
         imagem: ProjetoAcademia,
-        link: "https://gymprojects77.netlify.app/",
+        link: "https://master--gymprojects77.netlify.app/",
         linkGit: "https://github.com/JeanCsantos7/Projeto-Academia"
       },
       {
