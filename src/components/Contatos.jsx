@@ -13,54 +13,42 @@ export default function Contatos() {
         data-aos-delay="50"
         data-aos-duration="1500"
         data-aos-mirror="true"
-        data-aos-once="false"
+        data-aos-once="false" 
         className={styleContatos.Container}
       >
-        <h1 className={styleContatos.Titulo}>Meus Contatos</h1>
+        <h1 className={styleContatos.Titulo}>Entre em Contato</h1>
 
         <hr className={styleContatos.LinhaContatos} />
         <p className={styleContatos.Informacoes}>
-          Entre em contato por uma dessas redes sociais <br /> para orçamentos,
+          Entre em contato em uma das minhas redes sociais  <br /> ou preencha o formulário para orçamentos,
           propostas, etc...
         </p>
 
         <div
-         data-aos="fade-right"
+        data-aos="fade-right"
          data-aos-delay="50"
          data-aos-duration="1500"
          data-aos-mirror="true"
-         data-aos-once="false"
+         data-aos-once="false" 
           className={styleContatos.ContainerRedes}
         >
-          <span className={styleContatos.circulo}>
-            <a className={styleContatos.Redes} href="https://github.com/JeanCsantos7"  target="_blank"> 
-              {" "}
-              <IoLogoGithub />{" "}
-            </a>
-          </span>
-
-          <span className={styleContatos.circulo}>
-            <a   className={styleContatos.Redes} href="https://www.linkedin.com/in/jean-carlos-goes-6921b619a/" target="_blank">
-              {" "}
-              <FaLinkedin />{" "}
-            </a>
-          </span>
-
-          <span className={styleContatos.circulo}>
-            <a  className={styleContatos.Redes} href="https://api.whatsapp.com/send/?phone=5511964699139&text&type=phone_number&app_absent=0"  target="_blank">
-              {" "}
-              <FaWhatsapp />{" "}
-            </a>
-          </span>
-
-          <span className={styleContatos.circulo}>
-            <a  className={styleContatos.Redes} href="https://www.instagram.com/im.jeanc/"  target="_blank" >
-              {" "}
-              <FaInstagram />{" "}
-            </a>
-          </span>
-
+        
         </div>
+
+        <form >
+          <label className={styleContatos.labelItens} htmlFor="">Nome</label>
+         <input type="text" placeholder="Seu Nome" required />
+         <label className={styleContatos.labelItens} htmlFor="">Email</label>
+         <input type="email" placeholder="Seu Email" required  />
+
+         <label className={styleContatos.labelMensagem} htmlFor="">Mensagem</label>
+         <input className={styleContatos.inputMensagem} type="text" placeholder="Digite uma mensagem" required  />
+
+         <button className={styleContatos.btnEnviar}>Enviar</button>
+
+        </form>
+
+
 
     
       </div>
