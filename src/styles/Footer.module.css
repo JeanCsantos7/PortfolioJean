@@ -43,7 +43,42 @@
     align-items: center;
     gap: 2%;
     margin-top: 2%;
+   
 }
+
+
+
+
+#whats{
+    transition:  350ms ease-in-out;
+}
+
+
+#whats:hover{
+    transform: scale(1.2)
+}
+
+#git{
+    transition:  350ms ease-in-out;
+}
+
+
+#git:hover{
+    transform: scale(1.2)
+}
+
+#insta{
+    transition:  350ms ease-in-out;
+}
+
+
+#insta:hover{
+    transform: scale(1.2)
+}
+
+
+
+
 
 .Imagem{
     width: 38px;

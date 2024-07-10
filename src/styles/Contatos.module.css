@@ -47,6 +47,12 @@
     margin-top: 2.8%;
    }
 
+   .mensagemErro{
+    margin-top: 3%;
+    font-family: "Montserrat", sans-serif;
+    color: #FFF;
+   }
+
    input{
     font-family: "Montserrat", sans-serif;
     width: 285px;
@@ -109,7 +115,7 @@
     
   
        
-        height: 384px;
+        height: 635px;
        
      
       
@@ -118,7 +124,7 @@
     
     
     .Titulo{
-        font-size: 23px;
+        font-size: 22px;
         padding-top: 9.5%;
        
     }
@@ -136,9 +142,28 @@
        }
 
        .Informacoes{
-      
+        font-size: 13.5px;
         margin-top: 5.2%;
     }
+
+    .labelItens{
+   
+        padding-right: 55%;
+       margin: 2.6%;
+       }
+    
+     
+    
+    
+       .labelMensagem{
+        padding-right: 46%;
+        margin: 3.9%;
+       }
+
+       .btnEnviar{
+    
+        margin-top: 8%;
+       }
 
 
 

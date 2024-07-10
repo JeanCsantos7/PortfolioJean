@@ -27,13 +27,13 @@ export default function Footer() {
 
         <div className={styleFooter.ContainerFooter}>
           <a href="https://api.whatsapp.com/send/?phone=5511964699139&text&type=phone_number&app_absent=0" target="_blank">
-            <img className={styleFooter.Imagem} src={Whats} alt="" />
+            <img id={styleFooter.whats} className={styleFooter.Imagem} src={Whats} alt="" />
           </a>
           <a href="https://github.com/JeanCsantos7" target="_blank">
-            <img className={styleFooter.Imagem} src={Git} alt="" />
+            <img id={styleFooter.git} className={styleFooter.Imagem} src={Git} alt="" />
           </a>
           <a href="https://www.instagram.com/im.jeanc/" target="_blank">
-            <img className={styleFooter.Imagem} src={Instagram} alt="" />
+            <img id={styleFooter.insta} className={styleFooter.Imagem} src={Instagram} alt="" />
           </a>
         </div>
 
