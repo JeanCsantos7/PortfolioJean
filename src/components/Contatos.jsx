@@ -8,6 +8,7 @@ export default function Contatos() {
   const [names, setName] = useState('');
   const [email, setEmail] = useState('');
   const [mensagem, setMensagem] = useState('');
+  
 
 
 
@@ -15,63 +16,55 @@ export default function Contatos() {
  /*  Função onde estou realizando cadastrando usuarios no banco de dados e consultando se o nome ou email digitado pelo usuário já está cadastrado */
 
 
-  async function ligacaoBD(e)
-  {
-    e.preventDefault()
+ async function ligacaoBD(e)
+ {
+   e.preventDefault()
 
-    const queryeName = query(collection(db, 'users'), where('name', '==', names))
-    const queryeEmail = query(collection(db, 'users'), where('email', '==', email))
-    const pushName =  await getDocs(queryeName)
-
-    const pushEmail = await getDocs(queryeEmail)
+   const queryName = query(collection(db, 'users'), where('email', '==', email))
+   const getQuery= await getDocs(queryName)
 
 
-      if(!pushName.empty || !pushEmail.empty){
-       
-  
-        alert('Esse nome de usuário já está em uso')
+
+   if(getQuery.empty){
      
-       
-       
+      alert('Obrigado por entrar em contato, responderei em breve!')
+
+      setName('')
+      setEmail('')
+      setMensagem('')
+
+      try{
+       await addDoc(collection(db, 'users'), {
+
+        name: names,
+        email: email,
+        mensagem: mensagem
+       })
 
       }
 
-    try{
- 
-      await addDoc(collection(db, 'users'), {
-          name: names,
-          email: email,
-          mensagem: mensagem
-         
-      }) 
-
-    
-    
-
-    
-
-    }
-
-    catch{
-      console.error('Erro ao cadastrar usuários no banco de dados')
-    }
+      catch{
+        console.error('erro')
+      }
 
 
 
+      return;
+     
+   }
 
 
-  }
-
+ }
 
 
   return (
     <>
       <div
-       /*  data-aos="fade-right"
+        data-aos="fade-right"
         data-aos-delay="50"
         data-aos-duration="1500"
         data-aos-mirror="true"
-        data-aos-once="false" */
+        data-aos-once="false" 
         className={styleContatos.Container}
       >
         <h1 className={styleContatos.Titulo}>Entre em Contato</h1>
@@ -83,11 +76,11 @@ export default function Contatos() {
         </p>
 
         <div
-        /*   data-aos="fade-right"
+         data-aos="fade-right"
           data-aos-delay="50"
           data-aos-duration="1500"
           data-aos-mirror="true"
-          data-aos-once="false" */
+          data-aos-once="false" 
           className={styleContatos.ContainerRedes}
         >
         </div>
