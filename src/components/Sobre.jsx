@@ -1,5 +1,5 @@
 
-import JeanPhoto from "../assets/JeanPhoto2.jpeg"
+import JeanPhoto from "../assets/JeanPhoto.jfif"
 import styleSobreMim from "../styles/SobreMim.module.css"
 
 export default function SobreMim()

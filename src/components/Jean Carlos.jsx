@@ -3,7 +3,7 @@ import { MdDownload } from "react-icons/md";
 import Curriculo from "../assets/Jean Carlos Goes dos Santos.docx.pdf"
 import { IoLogoGithub } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
-import Foto from "../assets/JeanPhoto.jfif";
+import Foto from "../assets/fotoLinkedin.jpeg";
 
 export default function Jean() {
   return (
@@ -26,7 +26,7 @@ export default function Jean() {
 
         <span className={styleJean.ContainerIcones}>
          <a  href="https://github.com/JeanCsantos7">  <IoLogoGithub className={styleJean.Icones} /></a>
-         <a href="https://www.linkedin.com/in/jean-carlos-goes-6921b619a">  <FaLinkedin className={styleJean.Icones} /></a>
+         <a href="https://www.linkedin.com/in/jean-carlos-devs">  <FaLinkedin className={styleJean.Icones} /></a>
         
       
         </span>

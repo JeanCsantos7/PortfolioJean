@@ -1,6 +1,5 @@
 import { IoLogoGithub } from "react-icons/io5";
 import { LuExternalLink } from "react-icons/lu";
-
 import styleProjetos from "../styles/Projetos.module.css"
 import { SwiperSlide, Swiper } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
@@ -8,10 +7,11 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import ProjetoChurrascaria from "../assets/Churrascaria.png"
+
 import ProjetoLoja from "../assets/Loja.jpeg"
 import ProjetoAcademia from "../assets/Academia.jpeg"
 import ProjetoRenascy from "../assets/Renascy.png"
+import AdoteUmPet from "../assets/AdoteumPet.png"
 
 
 
@@ -21,11 +21,11 @@ export default function Projetos()
    const listaProjetos = [
      {
        id: 1,
-       titulo: "Projeto Churrascaria",
-       info: "Este é um projeto que representa uma churrascaria ficticia, para explorar conceitos os conceitos do react js. Nesse projeto utilizei React, React-Icons, React Router DOM e Swiper",
-       imagem: ProjetoChurrascaria,
-       link: "https://projeto-churrascaria-kntvcy450-jeancsantos7s-projects.vercel.app/",
-       linkGit: "https://github.com/JeanCsantos7/Projeto_Churrascaria"
+       titulo: "Adote um Pet",
+       info: "Este projeto é uma plataforma para adoção de animais, nesse projeto utilizei firebase pra armazenamento de dados, autenticação e storage, utilizei react no frontend e demais bibliotecas.",
+       imagem: AdoteUmPet,
+       link: "https://projetoadocaopet.netlify.app/",
+       linkGit: "https://github.com/JeanCsantos7/AdocaoPets"
      },
 
      {
