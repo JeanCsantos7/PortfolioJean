@@ -2,7 +2,7 @@
 
 > Meu portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e trajetória na área de tecnologia.
 
-!<img width="1903" height="887" alt="image" src="https://github.com/user-attachments/assets/ae13a1cb-5f40-4075-9deb-4bf1d007b761" />
+<img width="1903" height="887" alt="image" src="https://github.com/user-attachments/assets/ae13a1cb-5f40-4075-9deb-4bf1d007b761" />
 
 
 ## 🌐 Acesse Online
@@ -19,14 +19,7 @@ Aqui você encontrará:
 
 ---
 
-## 🖼️ Preview
-> Alguns exemplos do portfólio em funcionamento.
 
-| Versão Desktop | Versão Mobile |
-| --- | --- |
-| ![Mockup Desktop](./assets/mockup-desktop.png) | ![Mockup Mobile](./assets/mockup-mobile.png) |
-
----
 
 ## 🛠️ Tecnologias Utilizadas
 - HTML5 / CSS3 / JavaScript
